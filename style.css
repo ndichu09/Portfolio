@@ -177,20 +177,21 @@ html {
 
 /* adding animation to home section image  */
 .home img {
-    animation: floatimg 4s ease-in-out infinite;
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: 20px;
+    /* Add spacing for better visibility */
 }
 
-@keyframes floatimg {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-24px);
-    }
-
-    100% {
-        transform: translateX(0);
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .home img {
+        margin-top: 10px;
+        /* Reduce spacing on smaller screens */
+        width: 80%;
+        /* Adjust width for better fit */
     }
 }
 
