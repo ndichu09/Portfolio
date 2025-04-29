@@ -47,6 +47,33 @@ img {
     /* Maintain aspect ratio */
 }
 
+/* Contact Section Styling */
+.contact {
+    padding: 20px 15px;
+    /* Add padding for better spacing */
+}
+
+.contact .contact-details p {
+    font-size: 1rem;
+    /* Adjust font size for readability */
+    margin: 5px 0;
+    /* Add spacing between paragraphs */
+}
+
+.contact-form .form-control {
+    width: 100%;
+    /* Ensure form fields take up full width */
+    font-size: 1rem;
+    /* Adjust font size for readability */
+}
+
+.contact-form button {
+    width: 100%;
+    /* Make the button full width on smaller screens */
+    font-size: 1rem;
+    /* Adjust font size for readability */
+}
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .home {
@@ -65,15 +92,18 @@ img {
         /* Further limit the image size */
     }
 
-    .contact-form .form-control {
-        width: 100%;
-        /* Ensure form fields take up full width */
+    .contact {
+        padding: 15px 10px;
+        /* Reduce padding for smaller screens */
     }
 
-    .portfolio .card {
+    .contact .contact-details p {
+        font-size: 0.9rem;
+        /* Slightly reduce font size */
+    }
+
+    .contact-form button {
         width: 100%;
-        /* Make portfolio cards take full width */
-        height: auto;
-        /* Allow height to adjust dynamically */
+        /* Ensure the button spans the full width */
     }
 }
