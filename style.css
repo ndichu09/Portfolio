@@ -636,49 +636,36 @@ body.dark-mode .footer {
     color: #ffffff;
 }
 
-.card {
-    width: 100%;
-    /* Ensures the card spans its container */
-    height: auto;
-    /* Maintains aspect ratio */
-    border: 1px solid #ddd;
-    /* Optional: Add a border for consistency */
-    border-radius: 10px;
-    /* Optional: Add rounded corners */
-    overflow: hidden;
-    /* Ensures content stays within the card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional: Add a subtle shadow */
-    transition: transform 0.3s ease;
-    /* Smooth hover effect */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    /* Moves the card up slightly on hover */
-}
-
-.card-img-top {
-    width: 100%;
-    /* Ensures the image spans the full width of the card */
-    height: 200px;
-    /* Sets a consistent height for all card images */
-    object-fit: cover;
-    /* Ensures the image fits nicely within the card */
-}
-
-.card-body {
-    padding: 15px;
-    /* Adds padding inside the card body */
+/* Portfolio Section Card Styling */
+.portfolio .card {
+    width: 300px;
+    /* Set a fixed width */
+    height: 350px;
+    /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    /* Centers the text */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.card-img-top {
+.portfolio .card img {
     width: 100%;
-    /* Ensures the image spans the full width of the card */
-    height: auto;
-    /* Maintains the aspect ratio */
+    height: 200px;
+    /* Set a consistent height for images */
     object-fit: cover;
-    /* Ensures the image fits nicely within the card */
+    /* Ensure the image fits nicely */
+}
+
+.portfolio .card-body {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
