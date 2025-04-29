@@ -529,7 +529,8 @@
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
 
-    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" style="display: block;"
+        inert>
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
@@ -555,6 +556,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const modal = document.getElementById("hireMeModal");
+        modal.addEventListener("show.bs.modal", () => {
+            // Remove inert when the modal is shown
+            modal.removeAttribute("inert");
+        });
+        modal.addEventListener("hidden.bs.modal", () => {
+            // Add inert back when the modal is hidden
+            modal.setAttribute("inert", "");
+        });
+    </script>
 </body>
 
 </html>
