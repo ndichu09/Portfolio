@@ -1,0 +1,34 @@
+/* Home Section */
+.home {
+    background-color: #f2f2ff;
+    /* Light purple */
+    color: #3f396d;
+}
+
+/* Service Section */
+.expertise {
+    background-color: #eafaf1;
+    /* Light green */
+    color: #3f396d;
+}
+
+/* About Section */
+.skill {
+    background-color: #fff7e6;
+    /* Light yellow */
+    color: #3f396d;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #e6f7ff;
+    /* Light blue */
+    color: #3f396d;
+}
+
+/* Testimonials Section */
+.testimonial {
+    background-color: #fce4ec;
+    /* Light pink */
+    color: #3f396d;
+}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Kamiri Duncan Ndichu's personal portfolio showcasing expertise in digital marketing, web development, and social media management." />
+    <meta name="keywords"
+        content="Kamiri Duncan Ndichu, Portfolio, Digital Marketing, Web Development, Social Media Management, SEO" />
+    <meta name="author" content="Kamiri Duncan Ndichu" />
+    <title>Personal Portfolio - Duncan</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kamiri Duncan Ndichu - Personal Portfolio" />
+    <meta property="og:description"
+        content="Showcasing expertise in digital marketing, web development, and social media management." />
+    <meta property="og:image" content="Imgs/banner-01.webp" />
+    <meta property="og:url" content="https://ndichu.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- bootstrap css cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- bootstrap icon cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-offset="50" tabindex="0">
+    <!-- navbar starts -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+            <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-menu-button-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+                style="background-color: #6f34fe; color: #fff;">
+                <a href="#contact" style="text-decoration: none; color: #fff;">Contact</a>
+            </button>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+        <div class="row justify-content-evenly align-middle">
+            <!-- here data-aos is used for adding aos animation  -->
+            <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+                <h2 style="color: #3f396d">
+                    Hello! I Am <br /><span class="c-orange">Kamiri Duncan Ndichu</span>
+                </h2>
+                <p class="text-muted">
+                    A passionate Digital Marketer, Web Developer, and Social Media expert. With a strong background in
+                    crafting tailored online strategies, I specialize in driving brand growth through innovative web
+                    development and targeted social media marketing. Let’s connect and create impactful digital
+                    experiences.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hireMeModal">
+                    Hire Me
+                </button>
+                <a href="" class="link ms-4 d-none">See My Work</a>
+            </div>
+            <div class="col-10 col-md-4 d-none d-md-block">
+                <img src="Imgs/banner-01.webp" class="img-fluid" alt="Portfolio Banner Image" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+        <div class="heading text-center">
+            <small>My Expertise</small>
+            <h3>
+                Provide Wide Range of <br />
+                Digital Services
+            </h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\Web development.png" alt="Web Logo" class="img-fluid">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Web Development</h4>
+                        <p class="text-muted text-center">
+                            I build fast, responsive, and user-friendly websites tailored to your needs. From sleek
+                            portfolios to dynamic web apps, I deliver clean code, modern design, and seamless
+                            functionality—helping you establish a strong online presence.
+
+                            <br />
+                            Let’s turn your ideas into a powerful digital experience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\social-media.png" alt="Social Media Logo" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3 text-center">
+                        <h4 class="text-center">Social Media Management</h4>
+                        <p class="text-muted text-center">
+                            Boost your online presence with strategic social media management. I create engaging
+                            content, grow your audience, and optimize campaigns to enhance brand visibility—helping you
+                            connect with customers and drive results.
+
+
+                            <br />Let's make your brand stand out on social media!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\social-marketing.png" alt="Digital Marketer Logo" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3 text-center">
+                        <h4 class="text-center">Social Media Marketing</h4>
+                        <p class="text-muted text-center">
+                            Turn your social media into a powerful growth engine. I craft data-driven strategies,
+                            high-converting ads, and engaging content to increase brand awareness, generate leads, and
+                            drive
+
+                            sales. With a focus on ROI, I optimize campaigns to ensure maximum impact and reach.
+                            <br />
+                            Let’s turn followers into customers and maximize your social media impact
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+        <div class="heading text-center">
+            <small>My Skills</small>
+            <h3>
+                Beautiful & Unique <br />
+                Digital Experiences
+            </h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <!-- Web Development Skills -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\html.png" alt="HTML Icon" class="img-fluid" style="width: 61px; height: 61px;">
+                        <img src="Images\css.png" alt="CSS Icon" class="img-fluid ms-2"
+                            style="width: 61px; height: 61px;">
+                        <img src="Images\javascript.png" alt="JavaScript Icon" class="img-fluid ms-2"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Web Development Skills</h4>
+                        <p class="text-muted text-center">
+                            Front-End Development: HTML, CSS, JavaScript, Responsive web design (mobile-first approach),
+                            Version control (Git, GitHub).<br />
+                            Web Analytics Integration: Google Analytics integration to track user behavior and
+                            conversions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Digital Marketing Skills -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\support.png" alt="Digital Marketing Icon" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Digital Marketing Skills</h4>
+                        <p class="text-muted text-center">
+                            SEO: Site audits and technical SEO fixes.<br />
+                            Content Marketing: Developing content strategies for blogs, videos, and social media.<br />
+                            Paid Advertising (PPC): Google Ads, Facebook Ads, LinkedIn Ads.<br />
+                            Email Marketing: Using tools like MailChimp, HubSpot, or ActiveCampaign.<br />
+                            Marketing Analytics: Proficiency in Google Analytics, Facebook Insights, and campaign
+                            reporting tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Media Management Skills -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\content-management.png" alt="Social Media Management Icon" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Social Media Management Skills</h4>
+                        <p class="text-muted text-center">
+                            Social Media Strategy: Developing content calendars and social media plans.<br />
+                            Community Engagement: Building and engaging with online communities.<br />
+                            Social Media Analytics: Monitoring key metrics and reporting recommendations for
+                            growth.<br />
+                            Scheduling & Automation Tools: Using tools like Buffer, Hootsuite, or Later.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Media Marketing Skills -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\channel.png" alt="Social Media Marketing Icon" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Social Media Marketing Skills</h4>
+                        <p class="text-muted text-center">
+                            Paid Social Media Advertising: Facebook/Instagram Ads, LinkedIn Ads, Twitter Ads.<br />
+                            Campaign Management: Creating and managing multi-channel campaigns.<br />
+                            Lead Generation: Using social media to drive leads through gated content.<br />
+                            Social Listening: Monitoring brand mentions and trends using tools like Brandwatch or
+                            Mention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ICT Technician Skills -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\web-maintenance.png" alt="ICT Technician icon" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">ICT Technician Skills</h4>
+                        <p class="text-muted text-center">
+                            Hardware and Software Troubleshooting: Diagnosing and resolving technical issues.<br />
+                            Network Setup and Maintenance: Configuring and maintaining LAN/WAN networks.<br />
+                            System Installation: Installing and upgrading operating systems and software.<br />
+                            Technical Support: Providing on-site and remote IT support for users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Soft Skills & Personal Attributes -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card text-center">
+                    <div class="img text-center">
+                        <img src="Images\soft skills.png" alt="Soft Skills Icon" class="img-fluid"
+                            style="width: 61px; height: 61px;">
+                    </div>
+                    <div class="content mt-3">
+                        <h4 class="text-center">Soft Skills & Personal Attributes</h4>
+                        <p class="text-muted text-center">
+                            Project Management: Using tools like Asana, Trello, or Monday.com.<br />
+                            Collaboration: Working effectively with teams.<br />
+                            Adaptability: Staying updated with new trends and tools in the digital marketing field.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skill section ends -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading text-center pt-5">
+            <small>Creative Work</small>
+            <h3>Check My Portfolio</h3>
+        </div>
+        <div class="portfolio-body">
+            <div class="row justify-content-evenly px-4">
+                <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="Images\thequickfix.png" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">thequickfix.org</h4>
+                            <p class="text-muted"><strong>Role:</strong> Social Media Marketer</p>
+                            <div class="d-flex justify-content-center mt-2">
+                                <img src="Images\linkedin.png" alt="LinkedIn Logo" class="img-fluid me-2"
+                                    style="width: 50px; height: 50px;" />
+                                <img src="Images\tiktok.png" alt="TikTok Logo" class="img-fluid me-2"
+                                    style="width: 50px; height: 50px;" />
+                                <img src="Images/telegram.png" alt="Telegram Logo" class="img-fluid"
+                                    style="width: 50px; height: 50px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="Images\PrMS.png" class="card-img-top" alt="ProjectMindStrong Screenshot" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">ProjectMindStrong</h4>
+                            <p class="text-muted"><strong>Role:</strong> Project Manager & Partnership Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="Images\tigers.png" alt="Tigers RugbyFC Logo" class="img-fluid mt-2"
+                                style="width: 100px; height: auto;" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Tigers RugbyFc</h4>
+                            <p class="text-muted"><strong>Role:</strong> Social Media Manager</p>
+                            <img src="Images\instagram.png" alt="Instagram Logo" class="img-fluid mt-2"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-evenly mt-4 px-4">
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+        <div class="row justify-content-evenly">
+            <div class="col-md-4 col-10" data-aos="slide-right">
+                <img src="Images\tastimonials.png" class="img-fluid" alt="Testimonials Section Image" />
+            </div>
+            <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+                <div class="heading">
+                    <small>Testimonials</small>
+                    <h3>Happy Clients Feedback</h3>
+                    <!-- here we will use carousel element from bootstrap -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                                            consecteaur aeci velit, sed quia non numquam eius modi
+                                            tempora incidunt ut lao magnam aliquam quaerat ...
+                                        </p>
+                                        <h4>Kevin Andrew</h4>
+                                        <small class="fs-6 text-muted">CEO of Company</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                                            consecteaur aeci velit, sed quia non numquam eius modi
+                                            tempora incidunt ut lao magnam aliquam quaerat ...
+                                        </p>
+                                        <h4>Kevin Andrew</h4>
+                                        <small class="fs-6 text-muted">CEO of Company</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                                            consecteaur aeci velit, sed quia non numquam eius modi
+                                            tempora incidunt ut lao magnam aliquam quaerat ...
+                                        </p>
+                                        <h4>Kevin Andrew</h4>
+                                        <small class="fs-6 text-muted">CEO of Company</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nextprev-btn rounded-pill prev-btn" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-circle-fill prev"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="nextprev-btn rounded-pill next-btn" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-circle-fill next"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+        <div class="heading text-center">
+            <small>Get in Touch</small>
+            <h3>Any Questions? Feel Free to Contact</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-geo-alt-fill" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Location"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>00900 Kiambu Town Kenya</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>+254 715867123</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-send-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>kamiriduncan@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+                <div class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                            rows="5"></textarea>
+                    </div>
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+        <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+        <div class="link-group mt-5" data-aos="fade-up">
+            <a href="#home">Home</a>
+            <div class="vr"></div>
+            <a href="#about">About</a>
+            <div class="vr"></div>
+            <a href="#service">Service</a>
+            <div class="vr"></div>
+            <a href="#portfolio">Portfolio</a>
+            <div class="vr"></div>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- bootstrap javascript cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // initializing AOS library
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+        });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="hireMeModalLabel">Hire Me</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-muted">
+                        Interested in working together? Feel free to reach out to me via email or phone. Let's create
+                        something amazing together!
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:kamiriduncan@gmail.com"
+                            class="text-decoration-none">kamiriduncan@gmail.com</a><br />
+                        <strong>Phone:</strong> <a href="tel:+254715867123" class="text-decoration-none">+254
+                            715867123</a>
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success">Send Email</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
