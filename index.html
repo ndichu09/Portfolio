@@ -473,21 +473,21 @@
                 </div>
             </div>
             <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-                <div class="contact-form">
+                <form action="https://formspree.io/f/mvgazken" method="POST" class="contact-form">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+                        <label for="email" class="form-label">Your Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                            required />
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message"
+                            rows="5" required></textarea>
                     </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
-                            rows="5"></textarea>
-                    </div>
-                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                        Submit
+                    <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                        Send
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </section>
