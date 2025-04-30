@@ -107,3 +107,9 @@ img {
         /* Ensure the button spans the full width */
     }
 }
+
+/* Align text under Web Development Skills to the left */
+.skill .service-card .content {
+    text-align: left;
+    /* Align text to the left */
+}
