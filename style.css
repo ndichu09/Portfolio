@@ -1,115 +1,15 @@
-/* General container styling for static layout */
-.container {
-    max-width: 1200px;
-    /* Limit the width of the container */
-    margin: 0 auto;
-    /* Center the container */
-    padding: 0 15px;
-    /* Add padding for smaller screens */
-}
-
-/* Ensure images are responsive */
-img {
-    max-width: 100%;
-    /* Prevent images from exceeding their container width */
-    height: auto;
-    /* Maintain aspect ratio */
-}
-
-/* Adjustments for the home section */
-.home {
-    padding: 20px 0;
-    /* Add padding for better spacing */
-    text-align: center;
-    /* Center-align content for smaller screens */
-}
-
-.home h2 {
-    font-size: 2rem;
-    /* Adjust font size for smaller screens */
-    line-height: 2.5rem;
-}
-
-.home p {
-    font-size: 1rem;
-    /* Adjust font size for readability */
-    margin: 10px 0;
-    /* Add spacing between paragraphs */
-}
-
+/* Adjust the portfolio banner image dimensions */
 .home img {
-    margin-top: 20px;
-    width: 100%;
-    /* Ensure the image fits within the container */
-    max-width: 300px;
-    /* Limit the maximum width of the image */
+    max-width: 100%;
+    /* Ensure the image fits within its container */
     height: auto;
-    /* Maintain aspect ratio */
-}
-
-/* Contact Section Styling */
-.contact {
-    padding: 20px 15px;
-    /* Add padding for better spacing */
-}
-
-.contact .contact-details p {
-    font-size: 1rem;
-    /* Adjust font size for readability */
-    margin: 5px 0;
-    /* Add spacing between paragraphs */
-}
-
-.contact-form .form-control {
-    width: 100%;
-    /* Ensure form fields take up full width */
-    font-size: 1rem;
-    /* Adjust font size for readability */
-}
-
-.contact-form button {
-    width: 100%;
-    /* Make the button full width on smaller screens */
-    font-size: 1rem;
-    /* Adjust font size for readability */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .home {
-        padding: 15px 0;
-        /* Reduce padding for smaller screens */
-    }
-
-    .home h2 {
-        font-size: 1.8rem;
-        /* Reduce font size for smaller screens */
-    }
-
-    .home img {
-        margin-top: 10px;
-        max-width: 250px;
-        /* Further limit the image size */
-    }
-
-    .contact {
-        padding: 15px 10px;
-        /* Reduce padding for smaller screens */
-    }
-
-    .contact .contact-details p {
-        font-size: 0.9rem;
-        /* Slightly reduce font size */
-    }
-
-    .contact-form button {
-        width: 100%;
-        /* Ensure the button spans the full width */
-    }
-}
-
-/* Align text under Web Development Skills to the left */
-.skill .service-card .content {
-    text-align: left;
-    /* Align text to the left */
+    /* Allow the image to adjust its height automatically */
+    object-fit: contain;
+    /* Ensure the image scales properly without cropping */
+    margin-top: 0;
+    /* Remove extra spacing above the image */
+    margin-bottom: 0;
+    /* Remove extra spacing below the image */
+    border-radius: 0;
+    /* Remove rounded corners */
 }
