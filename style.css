@@ -1,15 +1,235 @@
-/* Adjust the portfolio banner image dimensions */
-.home img {
+/* Ensure the modal is responsive and fits mobile screens */
+.modal-dialog {
+    max-width: 90%;
+    /* Limit the modal width to 90% of the screen */
+    margin: 10px auto;
+    /* Add spacing around the modal */
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 100%;
+        /* Use full width for smaller screens */
+        margin: 5px;
+        /* Reduce margin for smaller screens */
+    }
+
+    .modal-content {
+        padding: 10px;
+        /* Add padding for better readability */
+    }
+}
+
+/* Responsive: Stack service/portfolio boxes vertically on small screens */
+@media (max-width: 991.98px) {
+
+    .row.justify-content-evenly,
+    .row {
+        flex-direction: column !important;
+        gap: 1.5rem 0;
+    }
+
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-10 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .service-card,
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+/* Section spacing */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Card spacing and padding */
+.card {
+    margin-bottom: 2.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.07);
+}
+
+/* Card body spacing */
+.card-body {
+    padding: 1.5rem 1rem;
+}
+
+/* Portfolio and skills row spacing */
+.row.justify-content-evenly {
+    gap: 2rem 0;
+}
+
+/* Space between icons in cards */
+.card-body .d-flex img,
+.card-body img {
+    margin-bottom: 0.5rem;
+}
+
+/* Section headings */
+.heading {
+    margin-bottom: 2.5rem;
+}
+
+/* Footer spacing */
+footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Further reduce padding/margins on extra small screens */
+@media (max-width: 575.98px) {
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        padding: 1rem 0.5rem;
+    }
+
+    .heading {
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* Ensure images and icons scale well */
+img,
+.card-img-top,
+.card-body img {
     max-width: 100%;
-    /* Ensure the image fits within its container */
     height: auto;
-    /* Allow the image to adjust its height automatically */
-    object-fit: contain;
-    /* Ensure the image scales properly without cropping */
-    margin-top: 0;
-    /* Remove extra spacing above the image */
-    margin-bottom: 0;
-    /* Remove extra spacing below the image */
-    border-radius: 0;
-    /* Remove rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .card {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .heading {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Navbar active link styles */
+.navbar-nav .nav-link.active {
+    color: #ff6600 !important;
+    /* or your highlight color */
+    font-weight: 600;
+    border-bottom: 2px solid #ff6600;
+    background: rgba(255, 102, 0, 0.08);
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6600;
+    background: rgba(255, 102, 0, 0.1);
+}
+
+/* Active link styles for the About and Portfolio sections */
+.nav-link[href="#about"].active,
+.nav-link[href="#portfolio"].active {
+    color: #ff6600 !important;
+    font-weight: 600;
+    border-bottom: 2px solid #ff6600;
+    background: rgba(255, 102, 0, 0.08);
+}
+
+/* Headlines: Larger, bolder */
+h1,
+.display-1,
+h2,
+.display-2,
+h3,
+.display-3,
+.heading h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.heading small {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ff6600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Buttons: Clear, visible, contrasting colors */
+.c-btn,
+.btn,
+button,
+input[type="submit"] {
+    background: #ff6600;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75em 2em;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px rgba(255, 102, 0, 0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.c-btn:hover,
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+    background: #d94d00;
+    color: #fff !important;
+    box-shadow: 0 4px 18px rgba(255, 102, 0, 0.15);
+}
+
+.c-btn:focus,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus {
+    outline: 2px solid #ff6600;
+    outline-offset: 2px;
+}
+
+/* Ensure button text is always visible */
+.c-btn,
+.btn,
+button,
+input[type="submit"] {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
 }
