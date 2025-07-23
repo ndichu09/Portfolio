@@ -46,22 +46,24 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-offset="50" tabindex="0">
     <!-- navbar starts -->
-    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
-            <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="bi bi-menu-button-fill"></i>
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm" role="navigation"
+        aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Duncan Ndichu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link" href="#service">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -69,18 +71,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonial">Testimonials</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
-                style="background-color: #6f34fe; color: #fff;">
-                <a href="#contact" style="text-decoration: none; color: #fff;">Contact</a>
-            </button>
         </div>
     </nav>
     <!-- navbar ends here -->
 
     <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
+    <section class="home pt-5 pb-5" id="home" role="region" aria-label="Home Section">
         <div class="row justify-content-evenly align-middle">
             <!-- here data-aos is used for adding aos animation  -->
             <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
@@ -107,7 +108,7 @@
     <!-- home section ends here -->
 
     <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
+    <section class="expertise mt-5" id="service" role="region" aria-label="Expertise Section">
         <div class="heading text-center">
             <small>My Expertise</small>
             <h3>
@@ -175,7 +176,7 @@
     <!-- expertise section ends here -->
 
     <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
+    <section class="skill mt-5 py-5" id="about" role="region" aria-label="Skills Section">
         <div class="heading text-center">
             <small>My Skills</small>
             <h3>
@@ -303,50 +304,133 @@
     <!-- skill section ends -->
 
     <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" role="region" aria-label="Portfolio Section">
         <div class="heading text-center pt-5">
             <small>Creative Work</small>
             <h3>Check My Portfolio</h3>
         </div>
         <div class="portfolio-body">
-            <div class="row justify-content-evenly px-4">
-                <div class="post col-md-4 game all col-10 mt-3 mt-md-0">
-                    <div class="card">
-                        <img src="Images\thequickfix.png" class="card-img-top" alt="The Quick Fix Website" />
+            <div class="row justify-content-center g-4 px-2">
+                <!-- Africa International Design Academy card -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="card flex-fill h-100">
+                        <img src="Images/africa-design-academy.png" class="card-img-top mx-auto mt-3"
+                            alt="Screenshot of Africa International Design Academy website" role="img"
+                            style="width:120px; height:auto;" />
                         <div class="card-body text-center">
-                            <h4 class="card-title">thequickfix.org</h4>
-                            <p class="text-muted"><strong>Role:</strong> Social Media Marketer</p>
-                            <div class="d-flex justify-content-center mt-2">
-                                <img src="Images\linkedin.png" alt="LinkedIn Logo" class="img-fluid me-2"
-                                    style="width: 50px; height: 50px;" />
-                                <img src="Images\tiktok.png" alt="TikTok Logo" class="img-fluid me-2"
-                                    style="width: 50px; height: 50px;" />
-                                <img src="Images/telegram.png" alt="Telegram Logo" class="img-fluid"
-                                    style="width: 50px; height: 50px;" />
+                            <h4 class="card-title">Africa International Design Academy</h4>
+                            <p class="text-muted"><strong>Role:</strong> Digital Marketer & Paid Media Specialist</p>
+                            <p class="text-muted">
+                                Led digital marketing campaigns and managed paid media for Africa International Design
+                                Academy. Developed strategies to boost online presence, created engaging content, and
+                                analyzed campaign performance across Facebook, Instagram, LinkedIn, and TikTok.
+                            </p>
+                            <div class="d-flex justify-content-center mt-2 flex-wrap">
+                                <img src="Images/facebook.png" alt="Facebook Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/instagram.png" alt="Instagram Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/whatsapp.png" alt="WhatsApp Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/linkedin.png" alt="LinkedIn Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/tiktok.png" alt="TikTok Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="post col-md-4 website all col-10 mt-3 mt-md-0">
-                    <div class="card">
-                        <img src="Images\PrMS.png" class="card-img-top" alt="ProjectMindStrong Screenshot" />
+                <!-- Explore to Exploit Adventure card -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="card flex-fill h-100">
+                        <img src="Images/Explore to Exploit Adventures.png" class="card-img-top mx-auto mt-3"
+                            alt="Explore to Exploit Adventures Logo" style="width:120px; height:auto;" />
                         <div class="card-body text-center">
-                            <h4 class="card-title">ProjectMindStrong</h4>
-                            <p class="text-muted"><strong>Role:</strong> Project Manager & Partnership Coordinator</p>
+                            <h4 class="card-title">Explore to Exploit Adventure</h4>
+                            <p class="text-muted"><strong>Role:</strong> Social Media Manager & Social Media Marketer
+                            </p>
+                            <p class="text-muted">
+                                I Managed and grew the Explore to Exploit Adventure brand on social media. Created and
+                                scheduled content, engaged with the community, and ran targeted campaigns on Facebook,
+                                Instagram, WhatsApp, TikTok, and Twitter to increase reach and engagement.
+                            </p>
+                            <div class="d-flex justify-content-center mt-2 flex-wrap">
+                                <img src="Images/facebook.png" alt="Facebook Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/instagram.png" alt="Instagram Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/whatsapp.png" alt="WhatsApp Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/tiktok.png" alt="TikTok Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/twitter.png" alt="Twitter Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0">
-                    <div class="card">
-                        <div class="text-center">
-                            <img src="Images\tigers.png" alt="Tigers RugbyFC Logo" class="img-fluid mt-2"
-                                style="width: 100px; height: auto;" />
+                <!-- The Quick Fix card -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="card flex-fill h-100">
+                        <img src="Images/thequickfix.png" class="card-img-top mx-auto mt-3" alt="The Quick Fix Website"
+                            style="width:120px; height:auto;" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">thequickfix.org</h4>
+                            <p class="text-muted"><strong>Role:</strong> Social Media Marketer</p>
+                            <p class="text-muted">
+                                The Quick Fix Learning Hub is an innovative platform dedicated to empowering learners
+                                with practical skills and knowledge. As the Social Media Marketer, I managed and grew
+                                the brand's digital presence, created engaging campaigns, and collaborated with the team
+                                to drive community engagement and awareness. My work included content creation,
+                                analytics,
+                                and running targeted campaigns across LinkedIn, TikTok, and Telegram.
+                            </p>
+                            <div class="d-flex justify-content-center mt-2 flex-wrap">
+                                <img src="Images/linkedin.png" alt="LinkedIn Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/tiktok.png" alt="TikTok Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/telegram.png" alt="Telegram Logo" class="img-fluid me-2 mb-2"
+                                    style="width: 40px; height: 40px;" />
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <!-- ProjectMindStrong card -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="card flex-fill h-100">
+                        <img src="Images/PrMS.png" class="card-img-top mx-auto mt-3" alt="ProjectMindStrong Screenshot"
+                            style="width:120px; height:auto;" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">ProjectMindStrong</h4>
+                            <p class="text-muted"><strong>Role:</strong> Partnership Coordinator</p>
+                            <p class="text-muted">
+                                Coordinated partnerships and managed outreach for ProjectMindStrong, a mental health
+                                initiative for athletes. Organized events, built collaborations, and helped design
+                                impactful programs to support mental wellness in the sports community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tigers RugbyFc card -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="card flex-fill h-100">
+                        <img src="Images/tigers.png" alt="Tigers RugbyFC Logo" class="img-fluid mt-3 mx-auto"
+                            style="width: 100px; height: auto;" />
                         <div class="card-body text-center">
                             <h4 class="card-title">Tigers RugbyFc</h4>
                             <p class="text-muted"><strong>Role:</strong> Social Media Manager</p>
-                            <img src="Images\instagram.png" alt="Instagram Logo" class="img-fluid mt-2"
-                                style="width: 50px; height: 50px;" />
+                            <p class="text-muted">
+                                Oversaw social media strategy and content for Tigers RugbyFc. Increased fan engagement
+                                and brand awareness by creating and sharing dynamic posts on Instagram and Facebook,
+                                and collaborating with the team for consistent online presence.
+                            </p>
+                            <div>
+                                <img src="Images/instagram.png" alt="Instagram Logo" class="img-fluid mt-2 me-2"
+                                    style="width: 40px; height: 40px;" />
+                                <img src="Images/facebook.png" alt="Facebook Logo" class="img-fluid mt-2"
+                                    style="width: 40px; height: 40px;" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,7 +443,7 @@
     <!-- portfolio section ends here -->
 
     <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
+    <section class="testimonial mt-5 pt-5" id="testimonial" role="region" aria-label="Testimonials Section">
         <div class="row justify-content-evenly">
             <div class="col-md-4 col-10" data-aos="slide-right">
                 <img src="Images\tastimonials.png" class="img-fluid" alt="Testimonials Section Image" />
@@ -453,7 +537,7 @@
     <!-- testimonial section ends here -->
 
     <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
+    <section class="contact py-5" id="contact" role="region" aria-label="Contact Section">
         <div class="heading text-center">
             <small>Get in Touch</small>
             <h3>Any Questions? Feel Free to Contact</h3>
@@ -487,28 +571,71 @@
                 </div>
             </div>
             <div class="col-md-5 col-10 mt-3 mt-md-0">
-                <form action="https://formspree.io/f/mvgazken" method="POST" class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form"
+                    novalidate>
                     <div class="mb-3">
                         <label for="email" class="form-label">Your Email:</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
-                            autocomplete="email" required />
+                            autocomplete="email" required aria-required="true" />
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Your Message:</label>
                         <textarea class="form-control" id="message" name="message" placeholder="Enter your message"
-                            rows="5" autocomplete="off" required></textarea>
+                            rows="5" autocomplete="off" required aria-required="true"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your message.
+                        </div>
                     </div>
                     <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
                         Send
                     </button>
+                    <div id="formStatus" class="mt-3" role="status" aria-live="polite"></div>
                 </form>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const form = document.getElementById('contactForm');
+                        const status = document.getElementById('formStatus');
+
+                        if (form) {
+                            form.addEventListener('submit', async function (e) {
+                                e.preventDefault();
+                                form.classList.add('was-validated');
+                                if (!form.checkValidity()) {
+                                    return;
+                                }
+                                status.textContent = "Sending...";
+                                const formData = new FormData(form);
+                                try {
+                                    const response = await fetch(form.action, {
+                                        method: "POST",
+                                        body: formData,
+                                        headers: { 'Accept': 'application/json' }
+                                    });
+                                    if (response.ok) {
+                                        status.textContent = "Thanks for reaching out!";
+                                        form.reset();
+                                        form.classList.remove('was-validated');
+                                    } else {
+                                        status.textContent = "Oops! There was a problem submitting your form.";
+                                    }
+                                } catch {
+                                    status.textContent = "Oops! There was a problem submitting your form.";
+                                }
+                            });
+                        }
+                    });
+                </script>
             </div>
         </div>
     </section>
     <!-- contact section ends here -->
 
     <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
+    <footer class="text-center text-muted py-4" role="contentinfo" aria-label="Footer">
         <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
         <div class="link-group mt-5" data-aos="fade-up">
             <a href="#home">Home</a>
@@ -542,9 +669,10 @@
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
 
-    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel">
-        <!-- Modal Content -->
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Hire Me Modal -->
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-modal="true"
+        role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title" id="hireMeModalLabel">Hire Me</h5>
@@ -583,6 +711,9 @@
             modal.setAttribute("inert", "");
         });
     </script>
+    <button id="darkModeToggle" aria-pressed="false" aria-label="Toggle dark mode">
+        <i class="bi bi-moon"></i>
+    </button>
 </body>
 
 </html>
