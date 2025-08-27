@@ -42,6 +42,10 @@
 
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Add Lightbox2 CSS and JS in your <head> if not already present -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-offset="50" tabindex="0">
@@ -314,9 +318,8 @@
                 <!-- Africa International Design Academy card -->
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
                     <div class="card flex-fill h-100">
-                        <img src="Images/africa-design-academy.png" class="card-img-top mx-auto mt-3"
-                            alt="Screenshot of Africa International Design Academy website" role="img"
-                            style="width:120px; height:auto;" />
+                        <img src="Images\AIDA _MAIN LOGO OP 2.png" class="card-img-top mx-auto mt-3"
+                            alt="Africa International Design Academy Logo" style="width:260px; height:auto;" />
                         <div class="card-body text-center">
                             <h4 class="card-title">Africa International Design Academy</h4>
                             <p class="text-muted"><strong>Role:</strong> Digital Marketer & Paid Media Specialist</p>
@@ -373,7 +376,7 @@
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
                     <div class="card flex-fill h-100">
                         <img src="Images/thequickfix.png" class="card-img-top mx-auto mt-3" alt="The Quick Fix Website"
-                            style="width:120px; height:auto;" />
+                            style="width:220px; height:auto;" />
                         <div class="card-body text-center">
                             <h4 class="card-title">thequickfix.org</h4>
                             <p class="text-muted"><strong>Role:</strong> Social Media Marketer</p>
@@ -400,7 +403,7 @@
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
                     <div class="card flex-fill h-100">
                         <img src="Images/PrMS.png" class="card-img-top mx-auto mt-3" alt="ProjectMindStrong Screenshot"
-                            style="width:120px; height:auto;" />
+                            style="width:200px; height:auto;" />
                         <div class="card-body text-center">
                             <h4 class="card-title">ProjectMindStrong</h4>
                             <p class="text-muted"><strong>Role:</strong> Partnership Coordinator</p>
@@ -442,6 +445,201 @@
     </section>
     <!-- portfolio section ends here -->
 
+    <!-- Sample Works Section -->
+    <section class="sample-works py-5" id="samples" role="region" aria-label="Sample Works Section">
+        <div class="heading text-center">
+            <small>Sample Works</small>
+            <h3>See My Recent Projects</h3>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <!-- Sample 1 Card with Lightbox Gallery in a Dropdown Bundle -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card flex-fill h-100 text-center">
+                        <img src="Images/AIDA _MAIN LOGO OP 2.png" class="card-img-top mx-auto mt-3"
+                            alt="Educational Brand Logo" style="width:100%; height:auto;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Educational Brand Design & Social Media Visuals</h5>
+                            <p class="text-muted">
+                                This project highlights a set of graphic design materials created for an
+                                education-focused brand. Click below to view the gallery.
+                            </p>
+                            <!-- Dropdown Button -->
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    View Gallery
+                                </button>
+                                <ul class="dropdown-menu p-3" aria-labelledby="galleryDropdown"
+                                    style="min-width: 300px;">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <a href="AIDA/AFRICA DESIGN SUMMIT.png" data-lightbox="edu-brand"
+                                                data-title="Africa Design Summit Poster">
+                                                <img src="AIDA/AFRICA DESIGN SUMMIT.png"
+                                                    class="img-fluid rounded shadow-sm"
+                                                    alt="Africa Design Summit Poster" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="AIDA/Attendee graphic.png" data-lightbox="edu-brand"
+                                                data-title="Course Promotion Flyer">
+                                                <img src="AIDA/Attendee graphic.png" class="img-fluid rounded shadow-sm"
+                                                    alt="Course Promotion Flyer" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="AIDA/africa design summit (5).png" data-lightbox="edu-brand"
+                                                data-title="Social Media Post">
+                                                <img src="AIDA/africa design summit (5).png"
+                                                    class="img-fluid rounded shadow-sm" alt="Social Media Post"
+                                                    style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <!-- Add or remove <div class="col-6">...</div> blocks for more samples -->
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sample 2 Card with Lightbox Gallery in a Dropdown Bundle -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card flex-fill h-100 text-center">
+                        <!-- Screenshot for Project 2 -->
+                        <img src="Images/Explore to Exploit Adventures.png" class="card-img-top mx-auto mt-3"
+                            alt="Screenshot of Project 2" style="width:130px; height:auto;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Touring Design & Social Media Content</h5>
+                            <p class="text-muted">This project entails a set of graphics desings and other contents
+                                created for a tour agency brand. Click below to view the gallery.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    View Gallery
+                                </button>
+                                <ul class="dropdown-menu p-3" aria-labelledby="galleryDropdown2"
+                                    style="min-width: 300px;">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <a href="ETE/CAMP NDUNDA.png" data-lightbox="sample2"
+                                                data-title="Sample 2 Image 1">
+                                                <img src="ETE/CAMP NDUNDA.png" class="img-fluid rounded shadow-sm"
+                                                    alt="Sample 2 Image 1" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="ETE/Camp Ndunda (1).png" data-lightbox="sample2"
+                                                data-title="Sample 2 Image 2">
+                                                <img src="ETE/Camp Ndunda (1).png" class="img-fluid rounded shadow-sm"
+                                                    alt="Sample 2 Image 2" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="ETE/final.png" data-lightbox="sample2"
+                                                data-title="Sample 2 Image 2">
+                                                <img src="ETE/final.png" class="img-fluid rounded shadow-sm"
+                                                    alt="Sample 2 Image 2" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <!-- Add more images for Sample 2 as needed -->
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sample 3 Card with Lightbox Gallery in a Dropdown Bundle -->
+                <!-- Sample 3 Card with Lightbox Gallery in a Dropdown Bundle -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card flex-fill h-100 text-center">
+                        <img src="Images/tigers.png" class="card-img-top mx-auto mt-3" alt="Screenshot of Project 3"
+                            style="width:100px; height:auto;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sports Design & Social Media Content</h5>
+                            <p class="text-muted">This project has sets of design, content created and published for a
+                                rugby sports team. Click below to view
+                                the gallery.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    View Gallery
+                                </button>
+                                <ul class="dropdown-menu p-3" aria-labelledby="galleryDropdown3"
+                                    style="min-width: 300px;">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <a href="TR/rug2.png" data-lightbox="sample3" data-title="Sample 3 Image 1">
+                                                <img src="TR/rug2.png" class="img-fluid rounded shadow-sm"
+                                                    alt="Sample 3 Image 1" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="TR/rug232.png" data-lightbox="sample3"
+                                                data-title="Sample 3 Image 2">
+                                                <img src="TR/rug232.png" class="img-fluid rounded shadow-sm"
+                                                    alt="Sample 3 Image 2" style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="TR/WhatsApp Image 2024-08-11 at 19.32.18_5e57efcb.jpg"
+                                                data-lightbox="sample3" data-title="Sample 3 Image 2">
+                                                <img src="TR/WhatsApp Image 2024-08-11 at 19.32.18_5e57efcb.jpg"
+                                                    class="img-fluid rounded shadow-sm" alt="Sample 3 Image 2"
+                                                    style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <!-- Add more images for Sample 3 as needed -->
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card flex-fill h-100 text-center">
+                        <img src="Images/sample3.png" class="card-img-top mx-auto mt-3" alt="Screenshot of Project 3"
+                            style="width:100%; height:auto;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="text-muted">Brief description of the project or work sample. Click below to view
+                                the gallery.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    View Gallery
+                                </button>
+                                <ul class="dropdown-menu p-3" aria-labelledby="galleryDropdown3"
+                                    style="min-width: 300px;">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <a href="Graphics Design/sample3-1.png" data-lightbox="sample3"
+                                                data-title="Sample 3 Image 1">
+                                                <img src="Graphics Design/sample3-1.png"
+                                                    class="img-fluid rounded shadow-sm" alt="Sample 3 Image 1"
+                                                    style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="Graphics Design/sample3-2.png" data-lightbox="sample3"
+                                                data-title="Sample 3 Image 2">
+                                                <img src="Graphics Design/sample3-2.png"
+                                                    class="img-fluid rounded shadow-sm" alt="Sample 3 Image 2"
+                                                    style="max-width: 100%;" />
+                                            </a>
+                                        </div>
+                                        <!-- Add more images for Sample 3 as needed -->
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more sample cards as needed, following the same structure -->
+            </div>
+        </div>
+    </section>
+
     <!-- testimonial section starts  -->
     <section class="testimonial mt-5 pt-5" id="testimonial" role="region" aria-label="Testimonials Section">
         <div class="row justify-content-evenly">
@@ -473,7 +671,7 @@
                                             digital strategist.”
                                         </p>
                                         <h4>William Kimanzi</h4>
-                                        <small class="fs-6 text-muted">Founder-The QuickFix
+                                        <small class="fs-6 text-muted">Founder - The QuickFix
                                             LearningHub,Kenya</small>
                                     </div>
                                 </div>
@@ -501,21 +699,45 @@
                                     </div>
                                     <div class="col-10">
                                         <p class="text-muted">
-                                            "Duncan Ndichu served as the Project Manager and Partnership Coordinator for
-                                            Project Mindstrong, an initiative dedicated to advocating for mental health
-                                            among athletes. His exceptional leadership, strategic planning, and
-                                            organizational skills were pivotal to the project's success. Duncan
-                                            demonstrated a deep understanding of mental health issues in the sports
-                                            community and was instrumental in designing impactful programs and events
-                                            that resonated with our target audience. Through his effective coordination
-                                            and ability to foster strong partnerships, the project achieved significant
-                                            outreach and engagement. His professionalism, attention to detail, and
-                                            unwavering commitment to the cause were evident throughout the duration of
-                                            the project. It was a privilege to work with him, and I highly recommend his
-                                            expertise for any mission-driven initiative."
+                                            Duncan Ndichu served in the role of Partnership Coordinator for
+                                            Project Mindstrong champions mental health as a focused endeavor.
+                                            among athletes. His planned organization and great leadership qualities.
+                                            Success in the project hinged on good organizational skills. Duncan
+                                            Demonstrated a comprehension that is deep of issues in mental health for
+                                            sports.
+                                            That community member instrumentally designed impactful programs and events.
+                                            That resonated. It resonated with our audience. Through his effective
+                                            coordination
+                                            and strong partnership ability, the project achieved greatly
+                                            outreach and engagement. His attention to detail and professionalism as
+                                            well.
+                                            Firm people committed to the cause clearly throughout the duration of
+                                            the project. It was a privilege for me to work with him, and I do highly
+                                            recommend him.
+                                            “Expertise just for any initiative driven onward by some mission.”
                                         </p>
                                         <h4>Leeon Nyang</h4>
-                                        <small class="fs-6 text-muted">Founder ProjectMindStrong</small>
+                                        <small class="fs-6 text-muted">Founder - ProjectMindStrong</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- New testimonial added below -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            Duncan Ndichu Kamiri was a valued team member known for his
+                                            positive attitude, excellent communication skills, and commitment to
+                                            learning. These exceptional skills made him a formidable asset to the
+                                            team and served as a success driver in the given tasks, ultimately
+                                            contributing to the advancement of the organization’s overarching
+                                            vision.
+                                        </p>
+                                        <h4>Michael John</h4>
+                                        <small class="fs-6 text-muted">President - AIDA</small>
                                     </div>
                                 </div>
                             </div>
